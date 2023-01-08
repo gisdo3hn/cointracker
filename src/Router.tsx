@@ -11,20 +11,20 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "cointracker",
         element: <Coins />,
       },
       {
-        path: "/:coinId/",
+        path: ":coinId",
         element: <Coin />,
         children: [
           {
-            path: "chart",
-            element: <Chart />,
+            path: "price/",
+            element: <Price />,
           },
           {
-            path: "price",
-            element: <Price />,
+            path: "chart/",
+            element: <Chart />,
           },
         ],
       },

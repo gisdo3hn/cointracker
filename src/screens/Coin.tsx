@@ -179,7 +179,7 @@ function Coin() {
       </Helmet>
       <Header>
         <BackBtn>
-          <Link to="/">
+          <Link to="/cointracker">
             <span>&rarr;</span>
           </Link>
         </BackBtn>
